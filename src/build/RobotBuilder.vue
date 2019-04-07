@@ -68,9 +68,9 @@ export default {
     if (this.addedToCart) {
       next(true);
     } else {
-      /** eslint no-alert: 0 */
-      /** eslint no-restricted-globals: 0 */
+      /* eslint-disable */
       const response = confirm('You have not added your robot to your cart, are you sure you want to leave?');
+      /* eslint-enable */
       next(response);
     }
   },
